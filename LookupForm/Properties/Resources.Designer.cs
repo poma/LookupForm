@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LookupForm.Properties
+namespace LookupFormNamespace.Properties
 {
 
 

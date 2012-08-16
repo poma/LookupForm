@@ -7,12 +7,12 @@ using System.Windows.Input;
 using System.ComponentModel;
 using System.Windows.Threading;
 
-namespace LookupForm
+namespace LookupFormNamespace
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
 	/// </summary>
-	public partial class MainWindow : Window, INotifyPropertyChanged
+	public partial class LookupForm : Window, INotifyPropertyChanged
 	{
 		public List<object> List { get; private set; }
 		public Func<object, string> LookupProperty { get; private set; }
@@ -27,6 +27,8 @@ namespace LookupForm
 				if (_searchText == value) return;
 				_searchText = value;
 				_collectionView.View.Refresh();
+				if (listBox.Items.Count > 0 && listBox.SelectedItem == null)
+					listBox.SelectedIndex = 0;
 				OnPropertyChanged("SearchText");
 			}
 		}
@@ -53,7 +55,7 @@ namespace LookupForm
 			set { selectedItem = value; }
 		}
 
-		public MainWindow(List<object> list, Func<object, string> lookupProperty)
+		public LookupForm(List<object> list, Func<object, string> lookupProperty)
 		{
 			LookupProperty = lookupProperty;
             List = list;

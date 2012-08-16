@@ -1,4 +1,4 @@
-﻿<Application x:Class="LookupForm.App"
+﻿<Application x:Class="LookupFormNamespace.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              Startup="Application_Startup">
