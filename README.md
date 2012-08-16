@@ -5,4 +5,6 @@ A Simple C# lookup form. Very short and simple code yet nice look and usability.
 
 ![Screenshot](https://raw.github.com/poma/LookupForm/master/Screenshots/Screenshot1.png)
 
+LookupForm.xaml contains actual code and App.xaml.cs contains example usage.
+
 Enjoy.
